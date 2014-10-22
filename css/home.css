@@ -1,0 +1,329 @@
+/*
+ * Globals
+ */
+
+
+/*Custom font declaration */
+@font-face {
+    font-family: 'latolight';
+    src: url('../fonts/lato-lig.eot');
+    src: url('../fonts/lato-lig.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/lato-lig.woff') format('woff'),
+         url('../fonts/lato-lig.ttf') format('truetype'),
+         url('../fonts/lato-lig.svg#latolight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+/* Links */
+a,
+a:focus,
+a:hover {
+  color: #2ecc71;
+}
+
+/* Custom default button */
+.btn-default,
+.btn-default:hover,
+.btn-default:focus {
+  font-weight: 600;
+  color: #666;
+  text-shadow: none; /* Prevent inheritence from `body` */
+  background-color: #333;
+  /*border: 1px solid #fff;*/
+}
+
+
+
+/*
+ * Base structure
+ */
+
+html,
+body {
+  height: 100%;
+  background-color: #fff;
+  font-family: "latolight", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+body {
+  color: #888;
+  text-align: center;
+  /*text-shadow: 0 1px 3px rgba(255,255,255,.5);  /* white text shadow for dark background*/*/
+}
+
+/* Extra markup and styles for table-esque vertical and horizontal centering */
+.site-wrapper {
+  display: table;
+  width: 100%;
+  height: 100%; /* For at least Firefox */
+  min-height: 100%;
+  /*-webkit-box-shadow: inset 0 0 100px rgba(52,152,219,.50);*/
+          /*box-shadow: inset 0 0 100px rgba(46,204,113,.50);*/
+}
+.site-wrapper-inner {
+  display: table-cell;
+  vertical-align: middle;
+}
+.page-container {
+  margin-right: auto;
+  margin-left: auto;
+}
+.page-heading .page-paragraph {
+  font-weight: 100;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+
+/* Padding for spacing */
+.inner {
+  padding: 30px;
+}
+
+
+/*
+ * Header
+ */
+.masthead-brand {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  float: left;
+  padding: 0px;
+  font-size: 45px;
+  font-weight: 400;
+  color: #2ECC71;
+  /*letter-spacing: 0.1em;*/
+  /*text-shadow:0 1px 3px rgba(46,204,113,0.25);*/
+
+}
+.masthead-logo {
+  float: left;
+  padding: 0px;
+  margin: 0px;
+}
+
+.masthead-nav > li {
+  display: inline-block;
+}
+.masthead-nav > li + li {
+  margin-left: 40px;
+}
+.masthead-nav > li > a {
+  margin-top: 50px;
+  padding-right: 5px;
+  padding-left: 5px;
+  font-size: 16px;
+  font-weight: 100;
+  /*text-shadow:0 2px 3px rgba(46,204,113,0.2);*/
+  color: #888; /* IE8 proofing */
+  /*color: rgba(255,255,255,.75);*/
+  border-bottom: 2px solid transparent;
+  /*box-shadow: inset 0 0 100px rgba(46,204,113,.1);*/
+}
+.masthead-nav > li > a:hover,
+.masthead-nav > li > a:focus {
+  background-color: transparent;
+  border-bottom-color: #2ECC71;   /*solid underline*/
+  border-bottom-color: rgba(46,204,113,.50);  /*transparent underline*/
+  border-bottom-color: -webkit-linear-gradient(left, #2ecc71 , #3498DB);  /*Gradient underline as design psd*/
+  color: #2ECC71;
+
+}
+.masthead-nav > .active > a,
+.masthead-nav > .active > a:hover,
+.masthead-nav > .active > a:focus {
+  color: #2ECC71;
+  border-bottom-color: #2ECC71;
+}
+
+.masthead-sea {
+  padding-left: 10px;
+  right: 70px;
+  top: 15px;
+}
+
+.masthead-lan {
+  right: 25px;
+  top: 20px
+}
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  height: 400px;
+  margin-top: auto;
+  margin-bottom: 60px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+  color: #444;
+  text-shadow: none;
+  margin-bottom: 50px;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 400px;
+}
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 400px;
+}
+
+
+@media (min-width: 768px) {
+  .masthead-brand {
+    float: left;
+  }
+  .masthead-nav {
+    float: right;
+  }
+  .masthead-logo {
+    float: left;
+  }
+}
+
+
+/*
+ * page
+ */
+
+.page {
+  padding: 0 20px;
+}
+.page .btn-lg {
+  padding: 10px 20px;
+  font-weight: 100;
+}
+
+.inner > .page-text {
+  color: #2ecc71;
+  /*padding-left: 50px;*/
+  /*padding-right: 50px;*/
+  text-align: left;
+  width: 400px;
+  font-weight: bolder;
+  /*text-shadow:  -1px 0 0 rgba(153,153,153,.5);*/
+}
+
+.page-img {
+  float: right;
+  margin-right: 150px;
+}
+
+.page-img > a {
+  padding:0px 15px;
+}
+
+.page-caption {
+  text-align: center;
+  padding-top: 10px;
+}
+
+.contact-list {
+  list-style-type: none;
+  padding-top: 1em;
+}
+
+/* rewrite thumbnail for matching the style concerning design*/
+.projects-thumbnail {
+  padding: 0px 10px;
+}
+
+.thumbnail {
+  background-color: rgba(52, 152, 219, .1);
+  /*background-color: rgba(46,204,113,.1);*/
+  border-color: transparent;
+}
+
+.projects-content {
+}
+
+
+
+
+
+/*
+ * Footer
+ */
+
+.mastfoot {
+  color: #999; /* IE8 proofing */
+  color: #fff;
+  font-weight: 100;
+  font-size: 12px;
+  letter-spacing: 0.05em;
+  padding-top: 5px;
+  background-color: #2ecc71;    /*solid background color when gradient is not supported*/
+  background: -webkit-linear-gradient(left, #2ecc71 , #3498DB); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, #2ecc71, #3498DB); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, #2ecc71, #3498DB); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, #2ecc71 , #3498DB); /* Standard syntax */
+}
+
+.mastfoot > .inner {
+  padding: 5px;
+  margin: 0px;
+}
+
+.mastfoot-text {
+  padding: 0px;
+  margin: 5px;
+
+}
+
+
+/*
+ * Affix and center
+ */
+
+@media (min-width: 768px) {
+  /* Pull out the header and footer */
+  .masthead {
+    position: fixed;
+    top: 0;
+  }
+  
+   /* Start the vertical centering */
+  .site-wrapper-inner {
+    vertical-align: middle;
+  }
+  .mastfoot {
+    position: fixed;
+    bottom: 0;
+  }
+ 
+  /* Handle the widths */
+  .masthead,
+  .mastfoot,
+  .page-container {
+    width: 100%; /* Must be percentage or pixels for horizontal alignment */
+  }
+
+  /* Hide the search bar */
+  /*.masthead-sea {
+    visibility: hidden;
+  }*/
+}
+
+@media (min-width: 992px) {
+  .masthead,
+  .mastfoot,
+  .page-container {
+    width: 100%;
+  }
+  
+  .site-wrapper-inner {
+    vertical-align: middle;
+  }
+
+
+}
+
+
